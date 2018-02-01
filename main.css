@@ -102,6 +102,43 @@ overflow-x: hidden !important;
 	width: 100%;
 }
 
+/********************************************/
+
+.label-nav,
+.label-nav--closed {
+    font-size: 30px;
+    width: 15px;
+    color: #f56131;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.label-nav:hover {
+    color: #f56131;
+}
+
+.label-nav--closed:hover {
+    color: #f56131;
+}
+
+.label-nav:active {
+    color: #f56131;
+}
+
+.label-nav--closed:active {
+    color: #f56131;
+}
+
+
+.input-nav {
+    display: none;
+}
+
 
 /************************ Top section ******************************/
 .top-section {
@@ -111,7 +148,7 @@ overflow-x: hidden !important;
 	overflow: hidden;
     position: relative; 
     top: 107px;
-}
+ }
 .flex-container__top {
 	display: flex;
 	justify-content: flex-end;
@@ -164,7 +201,7 @@ overflow-x: hidden !important;
 /**********************************************FINANCE**********************************/
 .finance {
 	background: #2f2339;
-	margin-top: 107px;
+	/* margin-top: 107px; */
 }
 .flex-container__finance {
 	display: flex;
@@ -173,9 +210,8 @@ overflow-x: hidden !important;
 .finance__pic {
 	width: 43%;
 	background: url('images/Finance.png') center center no-repeat;
-	background-size: cover;
+	background-size: contain;
 	overflow: hidden;
-    position: relative;
 }
 .finance__text {
 	width: 50%;
